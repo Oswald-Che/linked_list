@@ -1,6 +1,7 @@
 # making a node class for linked_list
 class Node
-  def intizialize(value = nil, next_node = nil)
+  attr_accessor :next_node, :value 
+  def initialize(value = nil, next_node = nil)
     @value = value
     @next_node = next_node
   end
